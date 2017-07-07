@@ -90,21 +90,10 @@ function interleave(){
     let vals = [];
     // Your answer here:
     for (var x = 0; x < letterVals.length; x++) {
-      letterVals[x];
-      x++;
-    }
-    for (y = 0; y < numberVals.length; y++) {
-      numberVals[y];
-      y++;
+      vals.push(letterVals[x] + numberVals[x])
     }
     return vals;
     }
-
-
-
-
-
-
 
 /*
 8. Iterate over the "first" and "second" arrays. Compare the values for both arrays. If the arrays values are the same, then store that value in the "same" array. Return "same".
@@ -117,13 +106,9 @@ function union(){
     let same = [];
     // Your answer here:
     for (q = 0; q < first.length; q++) {
-      q = q++;
-    }
-    for (p = 0; p < second.length; p++) {
-      p = p++;
+      if (first[q] === second[q]) {
+        same.push(first[q]);
       }
-    if (first[q] === second[p]) {
-      same = q;
     }
     return same;
 }
