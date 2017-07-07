@@ -24,10 +24,12 @@ function getFourthNum(){
 function smallNums(){
     let smallNums = [];
     // Your answer here:
-    for (i = 0; i < 10; i++) {
-      return smallNums;
-      i++;
+    for (i = 0; i < numbers.length; i++) {
+      if (numbers[i] < 10) {
+        smallNums.push(numbers[i]);
     }
+  }
+    return smallNums
 }
 
 /*
@@ -72,13 +74,8 @@ function addActor(){
 6. Now that you've added a "boxoffice" property, subtract "budget" from "boxoffice" and return the difference. This number is the amount lost by the studio in making the film. Return the loss.
 */
 function getLosses(){
-    return (film.boxoffice - film.budget);
+    return film.boxoffice - film.budget;
 }
-
-
-
-
-
 
 /*
 7. Iterate over "letterVals" and "numberVals". Concatenate the values from the two arrays and store the new values in the "vals" array. Return "vals".
@@ -92,7 +89,17 @@ let letterVals = [ "v", "x", "r", "f", "p" ];
 function interleave(){
     let vals = [];
     // Your answer here:
-}
+    for (var x = 0; x < letterVals.length; x++) {
+      letterVals[x];
+      x++;
+    }
+    for (y = 0; y < numberVals.length; y++) {
+      numberVals[y];
+      y++;
+    }
+    return vals;
+    }
+
 
 
 
@@ -109,4 +116,14 @@ let second = [ "think", "stand", "cheese", "break", "numinous", "mouse", "close"
 function union(){
     let same = [];
     // Your answer here:
+    for (q = 0; q < first.length; q++) {
+      q = q++;
+    }
+    for (p = 0; p < second.length; p++) {
+      p = p++;
+      }
+    if (first[q] === second[p]) {
+      same = q;
+    }
+    return same;
 }
