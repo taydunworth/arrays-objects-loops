@@ -88,9 +88,8 @@ let letterVals = [ "v", "x", "r", "f", "p" ];
 
 function interleave(){
     let vals = [];
-    // Your answer here:
-    for (var x = 0; x < letterVals.length; x++) {
-      vals.push(letterVals[x] + numberVals[x])
+    for (i = 0; i < letterVals.length; i++) {
+      vals.push(letterVals[i] + numberVals[i])
     }
     return vals;
     }
@@ -104,10 +103,9 @@ let second = [ "think", "stand", "cheese", "break", "numinous", "mouse", "close"
 
 function union(){
     let same = [];
-    // Your answer here:
-    for (q = 0; q < first.length; q++) {
-      if (first[q] === second[q]) {
-        same.push(first[q]);
+    for (i = 0; i < first.length; i++) {
+      if (first[i] === second[i]) {
+        same.push(first[i]);
       }
     }
     return same;
